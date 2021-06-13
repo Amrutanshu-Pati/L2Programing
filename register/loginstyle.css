@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  /* background-image: linear-gradient(#ff9f4a, #ff3c83); */
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#120e43),
+      to(#5737d6)
+    )
+    fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.loginHeading {
+  color: white;
+  margin-top:5px;
+}
+.loginInfo {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+.form-container {
+  /* background: #5737d6; */
+  background-image: linear-gradient(#120e43, #5737d6);
+  border-radius: 1.5rem;
+  width: 50rem;
+  height: auto;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+.formHeading {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  padding: 1.8rem;
+}
+.FormField {
+  margin: 1.8rem;
+}
+.name {
+  margin-bottom: 1.2rem;
+}
+#firstName,
+#lastName {
+  width: 23rem;
+  height: 4rem;
+  border-radius: 1rem;
+  border-style: none;
+  padding-left: 1rem;
+  font-size: 1.8rem;
+}
+#firstName,
+#lastName:focus {
+  outline: none;
+}
+.emailField,
+.mobileNumber,
+.pwdField {
+  margin-bottom: 1.2rem;
+}
+#email,
+#mobile,
+.password {
+  width: 46.2rem;
+  height: 4rem;
+  border-style: none;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  font-size: 1.8rem;
+}
+#email,
+#mobile,
+.password:focus {
+  outline: none;
+}
+.genderField {
+  font-size: 2rem;
+  margin-top: 1rem;
+  display: flex;
+}
+#male,
+#female {
+  width: 20px;
+  height: 20px;
+}
+.submitField {
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.submitbtn,
+.resetbtn {
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  border-style: none;
+  padding: 0.5rem;
+  margin: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.submitbtn:hover,
+.resetbtn:hover {
+  background: #ff3c83;
+  color: white;
+  transition: 0.3s;
+}
+.accountLink {
+  color: white;
+  font-size: 18px;
+  margin-top: 18px;
+}
+.accountLink a {
+  color: #ff3c83;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}

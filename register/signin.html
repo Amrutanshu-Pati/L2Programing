@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="stylesheet" href="loginstyle.css" />
+  </head>
+  <body>
+    <div class="loginHeading">
+      <img
+        src="../images/l2 logo2.svg"
+        width="200px"
+        height="60px"
+        alt="Lets Learn"
+      />
+    </div>
+    <div class="loginInfo">
+      <h3>Welcome to</h3>
+      <h1>L2 programming</h1>
+    </div>
+    <!-- login form starting -->
+    <div class="form-container">
+      <div class="formHeading">Sign-Up</div>
+      <form action="login.html" class="FormField">
+        <!-- Email Section -->
+        <div class="emailField">
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+
+        <!-- Password Section -->
+        <div class="pwdField">
+          <input
+            type="password"
+            name="password"
+            class="password"
+            id="newPassword"
+            placeholder="New Password"
+          />
+        </div>
+        <!-- Password Section -->
+        <div class="pwdField">
+          <input
+            type="password"
+            name="password"
+            class="password"
+            id="confPassword"
+            placeholder="Confirm Password"
+          />
+        </div>
+
+        <!-- Submit Section -->
+        <div class="submitField">
+          <input
+            type="submit"
+            name="submit"
+            class="submitbtn"
+            value="Sign-In"
+          />
+          <input type="reset" name="reset" class="resetbtn" value="Reset" />
+        </div>
+        <p class="accountLink">
+          Already have an account? Then <a href="login.html">Log-in </a> Now
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
