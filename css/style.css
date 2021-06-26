@@ -91,13 +91,14 @@ body {
 }
 .submenu {
   display: none;
+  /* z-index: 1111; */
 }
 .submenu ul {
   background-color: #03203c;
   display: block;
   position: absolute;
   left: 20px;
-  z-index: 1;
+  z-index: 11111111;
 }
 .submenu ul li {
   display: block;
@@ -105,8 +106,13 @@ body {
   margin-top: 9px;
   padding: 7px;
 }
-.navbar ul li:hover .submenu {
+div.navbar ul li:hover .submenu {
+  z-index: 1111;
   display: block;
+}
+div.navbar ul li:active .submenu {
+  z-index: 1111;
+  display: block !important;
 }
 .underline::after {
   content: "";
@@ -243,6 +249,7 @@ body {
     width: 420px;
     height: 35px;
     padding-left: 15px;
+    margin-left: 5px;
   }
   /* logo section ends */
   .navlist {
@@ -263,9 +270,11 @@ body {
   /* logo section */
   .logoSection {
     width: 100%;
-    height: 160px;
-    display: flex;
-    flex-wrap: wrap;
+    height: 190px;
+    /* display: flex; */
+    display: block;
+    /* flex-wrap: wrap; */
+    align-items: center;
   }
   .logo {
     flex: 100%;
@@ -275,6 +284,15 @@ body {
     width: 300px;
     height: 35px;
     padding-left: 15px;
+    margin-left: 5px;
+  }
+  .search {
+    text-align: center;
+  }
+  .login {
+    margin-right: 15px;
+    margin-top: 20px;
+    text-align: center;
   }
   /* logo section ends */
   .navlist {
